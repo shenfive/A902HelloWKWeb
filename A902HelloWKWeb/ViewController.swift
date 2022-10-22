@@ -25,6 +25,9 @@ class ViewController: UIViewController {
         
     }
 
-
+    @IBAction func goBack(_ sender: Any) {
+        theWeb.goBack()
+    }
+    
 }
 
