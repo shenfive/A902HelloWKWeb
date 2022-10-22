@@ -36,29 +36,56 @@
                                     <action selector="goBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cfh-u5-zql"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rz-om-K7g">
+                                <rect key="frame" x="346" y="47" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="8w1-fH-CH2"/>
+                                    <constraint firstAttribute="height" constant="44" id="sAN-wz-S0n"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="logo.xbox" catalog="system"/>
+                                <connections>
+                                    <action selector="loadWeb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GFf-wY-WSA"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OVG-GO-vdQ">
+                                <rect key="frame" x="58" y="52" width="280" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="cVB-1V-fhl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="URL"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="WLy-Ql-Uxd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="44" id="4en-yH-LJ7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WLy-Ql-Uxd" secondAttribute="bottom" id="4wc-Sc-2wz"/>
+                            <constraint firstItem="7Rz-om-K7g" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7cs-ee-u9D"/>
                             <constraint firstItem="R9l-GW-Xcp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8wu-aE-GjB"/>
                             <constraint firstItem="WLy-Ql-Uxd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CAr-O4-0fk"/>
+                            <constraint firstItem="7Rz-om-K7g" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HAY-vN-VJU"/>
+                            <constraint firstItem="OVG-GO-vdQ" firstAttribute="leading" secondItem="R9l-GW-Xcp" secondAttribute="trailing" constant="14" id="KgZ-NX-PMc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WLy-Ql-Uxd" secondAttribute="trailing" id="ZLK-ZU-dut"/>
+                            <constraint firstItem="OVG-GO-vdQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="hue-1I-cnF"/>
                             <constraint firstItem="R9l-GW-Xcp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wfN-Hn-QID"/>
+                            <constraint firstItem="7Rz-om-K7g" firstAttribute="leading" secondItem="OVG-GO-vdQ" secondAttribute="trailing" constant="8" symbolic="YES" id="yHA-cm-143"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="theWeb" destination="WLy-Ql-Uxd" id="8D1-6H-ysm"/>
+                        <outlet property="urlAddress" destination="OVG-GO-vdQ" id="YEU-st-qrO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-14" y="-28"/>
+            <point key="canvasLocation" x="-15.384615384615383" y="-28.436018957345969"/>
         </scene>
     </scenes>
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="95"/>
+        <image name="logo.xbox" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
